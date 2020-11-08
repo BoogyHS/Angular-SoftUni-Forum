@@ -2,24 +2,22 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-// Components
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
-
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
   declarations: [
-    FooterComponent,
-    HeaderComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     CommonModule,
     RouterModule
   ],
   exports: [
-    FooterComponent,
-    HeaderComponent,
+    RegisterComponent,
+    LoginComponent
   ]
 })
-export class CoreModule { }
+export class UserModule { }

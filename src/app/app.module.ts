@@ -9,11 +9,13 @@ import { ThemesModule } from './themes/themes.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
