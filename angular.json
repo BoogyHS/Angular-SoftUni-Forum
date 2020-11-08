@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Angular-SoftUni-Forum"
+    }
+  },
+  "defaultProject": "Angular-SoftUni-Forum",
+  "cli": {
+    "analytics": false
+  }
 }

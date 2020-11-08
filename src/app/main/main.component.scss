@@ -1,0 +1,112 @@
+// main {
+//   width: 50%;
+// }
+
+.welcome {
+  padding: 0.3em 0.5em;
+  border: 1px solid #999;
+  border-radius: 0.3em;
+  font-size: 0.8em;
+  margin-top: 1em;
+}
+
+.welcome h3 {
+  background-color: #4ebced;
+  border-radius: 0.3em;
+  width: 100%;
+  padding: 0.3em 1em;
+}
+
+.welcome p {
+  padding: 1em;
+  border-bottom: 1px solid #999;
+  font-style: normal;
+}
+
+.welcome a {
+  color: white;
+  text-decoration: none;
+  background-color: #4ebced;
+  border: none;
+  border-radius: 0.3em;
+  padding: 0.5em 5.2em;
+  margin: 1em;
+}
+
+.welcome ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 1em;
+}
+
+.welcome li {
+  list-style: none;
+}
+
+/* theme list item */
+
+.theme-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.theme-container span {
+  font-weight: bold;
+}
+
+.theme-container h2, p {
+  padding: 0.3em 0 0.2em;
+  margin: 0;
+}
+
+.theme-name-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3em 0.5em;
+  border: 1px solid #999;
+  border-radius: 0.3em;
+  font-size: 0.8em;
+  margin-top: 1em;
+}
+
+.theme-title {
+  padding: 0;
+}
+
+.theme-name {
+  width: 100%;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.7rem;
+}
+
+.subscribers {
+  text-align: right;
+  flex-basis: 25%;
+}
+
+.subscribers button {
+  padding: 0.2rem 0.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+.subscribe {
+  background-color: green;
+}
+
+.unsubscribe {
+  background-color: red;
+}
+
+time {
+  font-weight: bold;
+}
