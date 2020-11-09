@@ -9,6 +9,7 @@ import { tap } from 'rxjs/operators'
 export class ThemesService {
 
   themes: ITheme[];
+  theme: ITheme;
 
   constructor(private http: HttpClient) { }
 
@@ -16,7 +17,14 @@ export class ThemesService {
     return this.http.get<ITheme[]>('http://localhost:3000/api/themes')
       .pipe(tap(themes => {
         this.themes = themes.sort((a, b) => { return b.subscribers.length - a.subscribers.length });
-        console.log(themes)
+        // console.log(themes)
       }));
+    }
+
+    loadTheme(themeId) {
+      return this.http.get<ITheme>(`http://localhost:3000/api/themes/${themeId}`)
+      .pipe(tap(theme => {
+        this.theme = theme;
+      }))
   }
 }

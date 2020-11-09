@@ -1,0 +1,35 @@
+<div class="container">
+  <!-- theme content  -->
+  <div class="theme-content">
+    <app-home *ngIf="!isLogged"></app-home>
+      <app-theme-title [theme]="theme"></app-theme-title>
+      <!-- comment  -->
+      <div class="comment" *ngFor="let post of theme?.posts">
+          <header class="header">
+              <p><span>{{post.userId.username}}</span> posted on <span><time>{{post.created_at}}</time></span></p>
+          </header>
+          <div class="comment-main">
+              <div class="userdetails">
+                  <img src="../../../assets/images/profile.png" alt="avatar">
+              </div>
+              <div class="post-content">
+                  <p>{{post.text}}</p>
+              </div>
+          </div>
+          <div class="footer">
+              <i *ngIf="isLogged && !isLiked(post.likes)" class="fas fa-thumbs-up"></i>
+              <i *ngIf="isLogged && isLiked(post.likes)" class="fas fa-thumbs-down"></i>
+              <p><span>{{post.likes.length}}</span> likes</p>
+          </div>
+      </div>
+      <div class="answer-comment" *ngIf="isLogged">
+          <p><span>currentUser</span> comment:</p>
+          <div class="answer">
+              <form>
+                  <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                  <button>Post</button>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>

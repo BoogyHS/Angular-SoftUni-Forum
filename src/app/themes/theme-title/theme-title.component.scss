@@ -1,20 +1,5 @@
-/* theme list item */
-
-.theme-container a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.theme-container span {
-  font-weight: bold;
-}
-
-.theme-container h2, p {
-  padding: 0.3em 0 0.2em;
-  margin: 0;
-}
-
-.theme-name-wrapper {
+/* theme title  */
+.theme-name-wrapper{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,6 +46,18 @@
   background-color: red;
 }
 
-time {
-  font-weight: bold;
+.theme-title {
+  width: 100%;
+}
+
+.theme-name-wrapper .subscribers p {
+  text-align: right;
+}
+
+.theme-name {
+  margin-right: 1em;
+}
+
+.theme-name h2 {
+  padding-top: 0;
 }

@@ -5,16 +5,16 @@
       </div>
       <div class="mini-navbar">
           <ul>
-              <!-- <li>
-                  <a href="#">Johny's profile</a>
+              <li *ngIf="isLogged">
+                  <a routerLink="profile">Johny's profile</a>
               </li>
-              <li>
-                  <a href="#">Logout</a>
-              </li> -->
-              <li>
+              <li *ngIf="isLogged">
+                  <a routerLink="logout">Logout</a>
+              </li>
+              <li *ngIf="!isLogged">
                   <a routerLink="login">Login</a>
               </li>
-              <li>
+              <li *ngIf="!isLogged">
                   <a routerLink="register">Register</a>
               </li>
           </ul>
