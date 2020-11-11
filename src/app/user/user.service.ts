@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class UserService {
 
-  get isLogged() { return true }
+  get isLogged() { return false }
   get userId() { return '5fa64b162183ce1728ff371d' }
 
   constructor() { }
